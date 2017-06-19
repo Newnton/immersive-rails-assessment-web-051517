@@ -1,0 +1,7 @@
+<%= form_for @appearance do |f| %>
+please enter this number below: <%= @guest.id %><br>
+<%= text_field :guest_id %><br>
+What episode did <%= @guest.name %> appear in? <%= f.text_field :episode_id  %><br>
+How were they?(1-5) <%= f.number_field :rating %><br>
+<%= f.submit %>
+<% end %>
